@@ -11,7 +11,7 @@ struct ContentView: View {
     
     // MARK: - PROPERTY
     
-    @State private var isAnimating: Bool = falseßß
+    @State private var isAnimating: Bool = false
     @State private var imageScale: CGFloat = 1
     @State private var imageOffset : CGSize = .zero
     @State private var isDrawerOpen: Bool = false
