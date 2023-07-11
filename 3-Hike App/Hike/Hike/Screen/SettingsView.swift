@@ -8,6 +8,17 @@
 import SwiftUI
 
 struct SettingsView: View {
+    // MARK: - PROPERTIES
+    
+    private let alternateAppIcons: [String] = [
+     "AppIcon-MagnifyingGlass",
+     "AppIcon-Map",
+     "AppIcon-Mushroom",
+     "AppIcon-Camera",
+     "AppIcon-Backpack",
+     "AppIcon-Campfire"
+    ]
+ 
     var body: some View {
         List {
             // MARK: - SECTION HEADER
@@ -55,7 +66,100 @@ struct SettingsView: View {
             
             // MARK: - SECTION ICONS
             
+            Section{
+                ScrollView(.horizontal, showsIndicators: false){
+                    HStack(spacing: 12) {
+                        ForEach(alternateAppIcons.indices, id: \.self) { item in
+                            Button{
+                                print("Pressed Button")
+                                UIApplication.shared.setAlternateIconName(alternateAppIcons[item]){ error in
+                                    if error != nil {
+                                        print("Failed request to update the app's icon  \(String(describing: error?.localizedDescription))")
+                                    }
+                                    else{
+                                        print("Success! You have changed the app's icon to \(alternateAppIcons[item])")
+                                    }
+                                }
+                            }label: {
+                                Image("\(alternateAppIcons[item])-Preview")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80,height: 80)
+                                    .cornerRadius(16)
+                            }
+                        .buttonStyle(.borderless)
+                        }
+                    } //Avoiding issues with multiple Buttons in a List Row
+                }//: SCROLLVIEW
+                .padding(.top, 12)
+                Text("Choose your favorite app icon from the collection above.")
+                    .frame(minWidth: 0,maxWidth: .infinity)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.secondary)
+                    .font(.footnote)
+                    .padding(.bottom, 12)
+            }//: SECTION
+            
             // MARK: - SECTION: ABOUT
+            Section(
+                header: Text("ABOUT THE APP"),
+                footer:HStack{
+                    Spacer()
+                    Text("Copyright © All right reserved.")
+                    Spacer()
+                }
+                    .padding(.vertical,8)
+            ){
+                // 1. Labeled Content
+                
+                //LabeledContent("Application", value: "Hike")
+                
+                // 2. Advanced Labeled Content
+                
+                CustomListRowView(
+                    rowLabel: "Application",
+                    rowIcon: "apps.iphone",
+                    rowContent: "HIKE",
+                    rowTintColor: .blue
+                )
+                CustomListRowView(
+                    rowLabel: "Compatibility",
+                    rowIcon: "info.circle",
+                    rowContent: "iOS",
+                    rowTintColor: .red
+                )
+                CustomListRowView(
+                    rowLabel: "Technology",
+                    rowIcon: "swift",
+                    rowContent: "Swift",
+                    rowTintColor: .orange
+                )
+                CustomListRowView(
+                    rowLabel: "Version",
+                    rowIcon: "gear",
+                    rowContent: "1.0",
+                    rowTintColor: .purple
+                )
+                CustomListRowView(
+                    rowLabel: "Developer",
+                    rowIcon: "ellipsis.curlybraces",
+                    rowContent: "Emre Gemici",
+                    rowTintColor: .mint
+                )
+                CustomListRowView(
+                    rowLabel: "Designer",
+                    rowIcon: "paintpalette",
+                    rowContent: "Robert Petras",
+                    rowTintColor: .pink
+                )
+                CustomListRowView(
+                    rowLabel: "Website",
+                    rowIcon: "globe",
+                    rowTintColor: .pink ,
+                    rowLinkLabel: "Credo Academy",
+                    rowLinkDestination: "https://credo.academy"
+                )
+            }//: SECTION
             
         }//: LIST
         

@@ -19,6 +19,7 @@
 		EB70001C2A5C76D200425ADA /* CustomCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70001B2A5C76D200425ADA /* CustomCircleView.swift */; };
 		EB70001E2A5C78AC00425ADA /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70001D2A5C78AC00425ADA /* MotionAnimationView.swift */; };
 		EB7000212A5C7F1400425ADA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7000202A5C7F1400425ADA /* SettingsView.swift */; };
+		EB7000232A5D8C2800425ADA /* CustomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7000222A5D8C2800425ADA /* CustomListRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		EB70001B2A5C76D200425ADA /* CustomCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
 		EB70001D2A5C78AC00425ADA /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 		EB7000202A5C7F1400425ADA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EB7000222A5D8C2800425ADA /* CustomListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListRowView.swift; sourceTree = "<group>"; };
 		EB70FFFE2A5C360000425ADA /* Hike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 				EB7000172A5C482C00425ADA /* CustomButtonView.swift */,
 				EB70001B2A5C76D200425ADA /* CustomCircleView.swift */,
 				EB70001D2A5C78AC00425ADA /* MotionAnimationView.swift */,
+				EB7000222A5D8C2800425ADA /* CustomListRowView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			files = (
 				EB7000042A5C360000425ADA /* ContentView.swift in Sources */,
 				EB70001C2A5C76D200425ADA /* CustomCircleView.swift in Sources */,
+				EB7000232A5D8C2800425ADA /* CustomListRowView.swift in Sources */,
 				EB7000102A5C37ED00425ADA /* CardView.swift in Sources */,
 				EB7000022A5C360000425ADA /* HikeApp.swift in Sources */,
 				EB7000182A5C482C00425ADA /* CustomButtonView.swift in Sources */,
@@ -320,6 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hike/Preview Content\"";
@@ -349,6 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hike/Preview Content\"";
