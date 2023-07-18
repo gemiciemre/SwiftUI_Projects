@@ -12,7 +12,7 @@ struct StartButton: View {
     
     @AppStorage("isOnboarding") var isOnboarding : Bool?
     
-    @State private var showingContentView : Bool = false
+ 
     
  
     
@@ -20,7 +20,7 @@ struct StartButton: View {
     
     var body: some View {
         Button{
-            showingContentView = true
+            isOnboarding = false
            //Some Action
         }label: {
             HStack(spacing: 8){
@@ -33,9 +33,6 @@ struct StartButton: View {
             .background(
                 Capsule().strokeBorder(Color.white,lineWidth: 1.25)
             )
-        }
-        .sheet(isPresented: $showingContentView){
-            ContentView()
         }
         .accentColor(Color.white)
     }
