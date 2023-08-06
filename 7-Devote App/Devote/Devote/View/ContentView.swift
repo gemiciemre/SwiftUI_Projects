@@ -57,7 +57,7 @@ struct ContentView: View {
                     // MARK: - NEW TASK BUTTON
                     
                     Button(action: {
-                        //Some Action
+                        showNewTaskItem = true 
                     }, label: {
                         Image(systemName: "plus.circle")
                             .font(.system(size:30,weight: .semibold, design: .rounded))
@@ -97,7 +97,15 @@ struct ContentView: View {
                 
                 // MARK: - NEW TASK ITEM
                 
-                
+                if showNewTaskItem {
+                    BlankView()
+                        .onTapGesture {
+                            withAnimation(){
+                                showNewTaskItem = false 
+                            }
+                        }
+                    NewTaskItemView(isShowing: $showNewTaskItem)
+                }
                 
             }//: ZSTACK
             .onAppear(){

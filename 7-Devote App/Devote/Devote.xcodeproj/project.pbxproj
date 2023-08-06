@@ -20,6 +20,7 @@
 		EBBD5B302A7A166B003955F5 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EBBD5B2D2A7A166B003955F5 /* sound-ding.mp3 */; };
 		EBBD5B312A7A166B003955F5 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EBBD5B2E2A7A166B003955F5 /* sound-tap.mp3 */; };
 		EBBD5B3A2A7AB7EA003955F5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD5B392A7AB7EA003955F5 /* Constant.swift */; };
+		EBCBAE062A7D583500B7386E /* BlankVıew.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCBAE052A7D583500B7386E /* BlankVıew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		EBBD5B2E2A7A166B003955F5 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
 		EBBD5B342A7A17A0003955F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EBBD5B392A7AB7EA003955F5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		EBCBAE052A7D583500B7386E /* BlankVıew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlankVıew.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				EB0C97392A78070400FE63F9 /* ContentView.swift */,
 				EB71CBDB2A7D429300BF85DD /* BackgroundImageView.swift */,
 				EB71CBDD2A7D43E500BF85DD /* NewTaskItemView.swift */,
+				EBCBAE052A7D583500B7386E /* BlankVıew.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			files = (
 				EB0C97412A78070500FE63F9 /* Persistence.swift in Sources */,
 				EB71CBDC2A7D429300BF85DD /* BackgroundImageView.swift in Sources */,
+				EBCBAE062A7D583500B7386E /* BlankVıew.swift in Sources */,
 				EB0C973A2A78070400FE63F9 /* ContentView.swift in Sources */,
 				EB71CBDA2A7D22D400BF85DD /* HideKeyboardExtension.swift in Sources */,
 				EBBD5B3A2A7AB7EA003955F5 /* Constant.swift in Sources */,

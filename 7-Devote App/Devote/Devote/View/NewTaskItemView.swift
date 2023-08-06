@@ -14,6 +14,7 @@ struct NewTaskItemView: View {
     // FETCHING DATA
     @Environment(\.managedObjectContext) private var viewContext // A "scratchpad" to retrieve, update and store objects.
     @State private var task: String = ""
+    @Binding var isShowing: Bool
     
     private var isButtonDisabled: Bool{
         task.isEmpty
@@ -38,6 +39,7 @@ struct NewTaskItemView: View {
             }
             task = ""
             hideKeyboard()// task ı save ledikten sonra klavyeyi  gizliyoruz.
+            isShowing = false
         }
     }
 
@@ -84,7 +86,7 @@ struct NewTaskItemView: View {
 // MARK: - PREVIEW
 struct NewTaskItemView_Previews: PreviewProvider {
     static var previews: some View {
-        NewTaskItemView()
+        NewTaskItemView(isShowing: .constant(true))
             .previewLayout(.sizeThatFits)
             .background(Color.gray.edgesIgnoringSafeArea(.all))
     }
