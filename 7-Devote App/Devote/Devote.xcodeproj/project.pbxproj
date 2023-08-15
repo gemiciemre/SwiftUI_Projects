@@ -21,6 +21,7 @@
 		EBBD5B312A7A166B003955F5 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EBBD5B2E2A7A166B003955F5 /* sound-tap.mp3 */; };
 		EBBD5B3A2A7AB7EA003955F5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD5B392A7AB7EA003955F5 /* Constant.swift */; };
 		EBCBAE062A7D583500B7386E /* BlankVıew.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCBAE052A7D583500B7386E /* BlankVıew.swift */; };
+		EBD5B7BC2A8BEB5D00DD0E2E /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5B7BB2A8BEB5D00DD0E2E /* ListRowItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		EBBD5B342A7A17A0003955F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EBBD5B392A7AB7EA003955F5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		EBCBAE052A7D583500B7386E /* BlankVıew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlankVıew.swift"; sourceTree = "<group>"; };
+		EBD5B7BB2A8BEB5D00DD0E2E /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				EB71CBDB2A7D429300BF85DD /* BackgroundImageView.swift */,
 				EB71CBDD2A7D43E500BF85DD /* NewTaskItemView.swift */,
 				EBCBAE052A7D583500B7386E /* BlankVıew.swift */,
+				EBD5B7BB2A8BEB5D00DD0E2E /* ListRowItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				EB0C973A2A78070400FE63F9 /* ContentView.swift in Sources */,
 				EB71CBDA2A7D22D400BF85DD /* HideKeyboardExtension.swift in Sources */,
 				EBBD5B3A2A7AB7EA003955F5 /* Constant.swift in Sources */,
+				EBD5B7BC2A8BEB5D00DD0E2E /* ListRowItemView.swift in Sources */,
 				EB0C97442A78070500FE63F9 /* Devote.xcdatamodeld in Sources */,
 				EB0C97382A78070400FE63F9 /* DevoteApp.swift in Sources */,
 				EB71CBDE2A7D43E500BF85DD /* NewTaskItemView.swift in Sources */,
