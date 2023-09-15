@@ -114,6 +114,6 @@ struct IconModifier: ViewModifier{
 struct DishesView_Previews: PreviewProvider {
     static var previews: some View {
         DishesView()
-            .previewLayout(.fixed(width: 414, height: 280))
+            .previewLayout(.fixed(width: 410, height: 280))
     }
 }

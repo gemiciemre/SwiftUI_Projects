@@ -21,8 +21,7 @@ struct ContentView: View {
         ScrollView(.vertical, showsIndicators: false){
             VStack(alignment: .center, spacing: 20){
                 // MARK: - HEADER
-                
-                
+                /*
                 ScrollView(.horizontal, showsIndicators: false){
                     HStack(alignment: .top,spacing: 0){
                         ForEach(headers) { item in
@@ -31,6 +30,14 @@ struct ContentView: View {
                         }
                     }
                 }
+                */
+                TabView{
+                    ForEach(headers) { item in
+                        HeaderView(header: item)
+                    }
+                }
+                .tabViewStyle(PageTabViewStyle())
+                .frame(width: 480,height: 320)
                 
                 // MARK: - DISHES VIEW
                 Text("Avocado Dishes")
@@ -38,6 +45,7 @@ struct ContentView: View {
                     .modifier(TitleModifier())
                 
                 DishesView()
+                    .frame(width: 410)
                 
                 // MARK: - AVOCADO FACTS
                 
@@ -55,6 +63,7 @@ struct ContentView: View {
                         }
                     }
                 }
+                .padding(.horizontal,25)
                 // MARK: - RECIPE CARDS
                 
                 Text("Avocado Recipes")
@@ -67,7 +76,7 @@ struct ContentView: View {
                     }
                 }
                 .frame(maxWidth: 640)
-                .padding(.horizontal)
+                .padding(.horizontal,35)
 
                 // MARK: - FOOTER
                 VStack(alignment: .center, spacing: 20){
@@ -84,6 +93,7 @@ struct ContentView: View {
                 .frame(maxWidth: 640)
                 .padding()
                 .padding(.bottom,85)
+                .padding(.horizontal,35)
             }//: VSTACK
         }//: SCROLL
         .edgesIgnoringSafeArea(.all)

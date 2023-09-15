@@ -13,5 +13,4 @@ struct Fact: Identifiable{
     var id = UUID()
     var image: String
     var content: String
-    
 }
