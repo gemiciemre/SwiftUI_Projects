@@ -21,7 +21,7 @@ struct ContentView: View {
     @State private var animatingModal: Bool = false
     
     
-    let symbols = ["gfx-bell","gfx-cherry","gfx-coin","gfx-grape","gfx-seven","gfx-strawberyy"]
+    let symbols = ["gfx-bell","gfx-cherry","gfx-coin","gfx-grape","gfx-seven","gfx-strawberry"]
     let haptics = UINotificationFeedbackGenerator()
     
     // MARK: - FUNC
